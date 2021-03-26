@@ -3,3 +3,7 @@ data/*
 # Ignore computed matrices
 matlab/gram_matrices/*
 matlab/predictions.csv
+# Ignore virtual environment
+venv
+# Removes Python cache files
+*.pyc
