@@ -1,0 +1,32 @@
+# List of values to test for the lambda used in the C-SVM
+lambd:
+  - 0.001
+  - 0.01
+  - 0.1
+# List of values to test for the lambda used in the
+# substring kernel (if relevant)
+lambd_kern:
+  - 0.5
+# List of subsequence length values to test
+subseq_length:
+  - 2
+# In ]0, 1[ to validate on the rest of the training dataset
+# To run on the whole dataset, choose 1
+train_split: 0.6
+
+# Choose the kernel to use in ['spectrum', 'substring', 'fast_substring']
+kernel: 'fast_substring' 
+
+# Paths used for this project
+paths:
+  data: '../data'
+  k: 'k'
+
+# Name of the final prediction
+test_pred_name: 'prediction'
+# Random seed to use for numpy
+np_seed: 42
+# Display logs and figures with wandb
+use_wandb: False
+# Use parallel computation
+parallel: False
