@@ -25,7 +25,9 @@ python run_exp.py
 You can choose which experiment to run with the `cfg.yml` file.
 
 ### Matlab part
-In the Matlab part, we implemented a C-SVM with the substring kernel. In order to run it, you can directly run the file `SVM.m`. 
+In the Matlab part, we implemented a C-SVM with the substring kernel. In order to run it, you can need to:
+- compute the gram matrices of each dataset with `test_kernel_substring.m` (change the dataset to load with the first line): this should give 6 matrices (2 for each dataset, one for training and one for test)
+- run the file `SVM.m`
 
 As for the other files:
 - `kernel_substring.m`: function to compute the Gram matrix of the substring kernel (of a given input)
