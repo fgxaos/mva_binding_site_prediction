@@ -10,6 +10,9 @@ Genome-wide protein-DNA binding maps can be profiled using some experimental tec
 In this challenge, we will work with three datasets corresponding to three different TFs.
 
 ## How to run the project
+### Adding the data
+Please add the Kaggle data files in the `data` folder (15 files).
+
 ### Python part
 In the Python part, we implemented a C-SVM with both the spectrum kernel and the substring kernel. 
 
